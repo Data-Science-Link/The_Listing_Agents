@@ -1,0 +1,20 @@
+,ColName,NumNA,PercentNA,Classy,First_val,Propose,Meaning
+1,PoolQC,1453,99.5,factor,NA,Binary,No pool
+2,MiscFeature,1406,96.3,factor,NA,Binary,"No miscellanious features not covered in other categories (elevator, 2nd garage, other, shed, tennis court)"
+3,Alley,1369,93.8,factor,NA,Binary,No alley access
+4,Fence,1179,80.8,factor,MnPrv,Binary,No fence
+5,FireplaceQu,690,47.3,factor,NA,Binary,No fireplace
+6,LotFrontage,259,17.7,integer,66,Random Impute,Description: Linear feet of street connected to property (Perhaps no street adjacent to property?)
+7,GarageType,81,5.5,factor,Attchd,Dummify,No garage
+8,GarageYrBlt,81,5.5,integer,1966,Dummify,No garage
+9,GarageFinish,81,5.5,factor,Unf,Dummify,No garage
+10,GarageQual,81,5.5,factor,TA,Dummify,No garage
+11,GarageCond,81,5.5,factor,TA,Dummify,No garage
+12,BsmtExposure,38,2.6,factor,No,Dummify,No basement
+13,BsmtFinType2,38,2.6,factor,Unf,Dummify,No basement
+14,BsmtQual,37,2.5,factor,TA,Dummify,No basement
+15,BsmtCond,37,2.5,factor,TA,Dummify,No basement
+16,BsmtFinType1,37,2.5,factor,BLQ,Dummify,No basement
+17,MasVnrType,8,0.5,factor,None,Random Impute,No masonry vaneer type
+18,MasVnrArea,8,0.5,integer,0,Random Impute,No masonry vaneer type
+19,Electrical,1,0.1,factor,SBrkr,Random Impute,No meaning. Just missing.
