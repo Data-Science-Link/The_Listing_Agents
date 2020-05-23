@@ -1,0 +1,8 @@
+Data Source:
+https://educateiowa.gov/data-and-reporting/education-statistics
+
+Proficiency is best
+Count of TAG students is clean and easy to use, just not sure if it is defensible
+ACT is good, but not broken down by county. Just district
+ACT is good, but not broken down by county. Just school
+
