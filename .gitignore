@@ -1,4 +1,5 @@
 *.Rhistory
 *.xlsx
 *.csv
+!data/kaggle/*.csv
 *.docx
