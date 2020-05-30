@@ -1,0 +1,77 @@
+Variable,Description,Upgradable,Cost,Source
+1stFlrSF,First Floor square feet,n,,
+2ndFlrSF,Second floor square feet,n,,
+3SsnPorch,Three season porch area in square feet,y,30000,https://www.homeadvisor.com/cost/sunrooms/
+Alley,Type of alley access to property,n,,
+BedroomAbvGr,Bedrooms above grade (does NOT include basement bedrooms),n,,
+BldgType_group,Type of dwelling,n,,
+BsmtCond_group,Evaluates the general condition of the basement,y,30000,https://smartasset.com/mortgage/the-average-cost-to-finish-a-basement
+BsmtExposure,Refers to walkout or garden level walls,n,,
+BsmtFinSF1,Type 1 finished square feet,y,37.5 / unfinished square ft,https://smartasset.com/mortgage/the-average-cost-to-finish-a-basement
+BsmtFinSF2,Type 2 finished square feet,y,37.5 / unfinished square ft,https://smartasset.com/mortgage/the-average-cost-to-finish-a-basement
+BsmtFinType1,Rating of basement finished area,y,37.5 / unfinished square ft,https://smartasset.com/mortgage/the-average-cost-to-finish-a-basement
+BsmtFinType2,Rating of basement finished area (if multiple types),y,37.5 / unfinished square ft,https://smartasset.com/mortgage/the-average-cost-to-finish-a-basement
+BsmtFullBath,Basement full bathrooms,y,15000,https://www.angieslist.com/articles/how-much-does-it-cost-add-bathroom.htm
+BsmtHalfBath,Basement half bathrooms,y,10000,https://www.angieslist.com/articles/how-much-does-it-cost-add-bathroom.htm
+BsmtQual_group,Evaluates the height of the basement,n,,
+BsmtUnfSF,Unfinished square feet of basement area,y,37.5 / unfinished square ft,https://smartasset.com/mortgage/the-average-cost-to-finish-a-basement
+CentralAir,Central air conditioning,y,5000,https://www.nerdwallet.com/blog/mortgages/cost-to-install-central-air/
+Condition1_group,Proximity to various conditions,n,,
+Condition2,Proximity to various conditions (if more than one is present),n,,
+Electrical_group,Electrical system,n,,
+EnclosedPorch,Enclosed porch area in square feet,y,22500,https://www.inchcalculator.com/screen-porch-cost-guide/
+ExterCond,Evaluates the present condition of the material on the exterior,n,,
+Exterior1st_group,Exterior covering on house,n,,
+Exterior2nd_group,Exterior covering on house (if more than one material),n,,
+ExterQual,Evaluates the quality of the material on the exterior ,n,,
+Fence,Fence quality,y,2500,https://homeguide.com/costs/fence-installation-cost
+FireplaceQu,Fireplace quality,y,1200,https://www.improvenet.com/r/costs-and-prices/fireplace-remodeling-cost
+Fireplaces,Number of fireplaces,n,,
+Foundation_group,Type of foundation,n,,
+FullBath,Full bathrooms above grade,y,25000,https://www.homeadvisor.com/cost/bathrooms/
+Functional,Home functionality (Assume typical unless deductions are warranted),n,,
+GarageArea,Size of garage in square feet,y,24000,https://homeguide.com/costs/cost-to-build-a-garage
+GarageCars,Size of garage in car capacity,y,24000,https://homeguide.com/costs/cost-to-build-a-garage
+GarageCond_group,Garage condition,y,12500,https://www.kompareit.com/homeandgarden/remodel-garage-remodeling.html
+GarageFinish,Interior finish of the garage,y,12500,https://www.kompareit.com/homeandgarden/remodel-garage-remodeling.html
+GarageQual,Garage quality,y,12500,https://www.kompareit.com/homeandgarden/remodel-garage-remodeling.html
+GarageType,Garage location,y,,
+GarageYrBlt,Year garage was built,n,,
+GrLivArea,Above grade (ground) living area square feet,Tough,2100 to take out non-load bearing wall,https://www.homeadvisor.com/cost/additions-and-remodels/remove-load-bearing-wall/
+HalfBath,Half baths above grade,y,10000,https://www.saniflodepot.com/pages/cost-to-add-small-half-bathroom
+HeatingQC_group,Heating quality and condition,y,7000,https://www.fixr.com/costs/gas-central-heating-installation
+HouseStyle_group,Style of dwelling,tough,,
+ID,,n,,
+KitchenAbvGr,Kitchens above grade,n,,
+KitchenQual,Kitchen quality,y,25095,https://www.homeadvisor.com/cost/kitchens/remodel-a-kitchen/
+LandContour_group,Flatness of the property,n,,
+LandSlope,Slope of property,n,,
+LotArea,Lot size in square feet,n,,
+LotConfig_group,Lot configuration,n,,
+LotFrontage,Linear feet of street connected to property,n,,
+LotShape_group,General shape of property,n,,
+LowQualFinSF,Low quality finished square feet (all floors),y,37.5 / unfinished square ft,https://smartasset.com/mortgage/the-average-cost-to-finish-a-basement
+MasVnrArea,Masonry veneer area in square feet,n,,
+MasVnrType_group,Masonry veneer type,n,,
+MiscVal,$Value of miscellaneous feature,n,,
+MoSold,Month Sold (MM),n,,
+MSSubClass,Identifies the type of dwelling involved in the sale.,n,,
+MSZoning,Identifies the general zoning classification of the sale.,n,,
+Neighborhood,Physical locations within Ames city limits,n,,
+OpenPorchSF,Open porch area in square feet,y,21440,https://www.fixr.com/costs/porch-addition
+OverallCond,Rates the overall condition of the house,tough,,
+OverallQual,Rates the overall material and finish of the house,tough,,
+PavedDrive,Paved driveway,y,4604,https://www.homeadvisor.com/cost/outdoor-living/install-asphalt-paving/
+RoofStyle_group,Type of roof,y,8022,https://www.homeadvisor.com/cost/roofing/install-a-roof/
+SaleCondition_group,Condition of sale,n,,
+SalePrice,,,,
+SaleType_group,Type of sale,n,,
+ScreenPorch,Screen porch area in square feet,y,22500,https://www.inchcalculator.com/screen-porch-cost-guide/
+Street,Type of road access to property,n,,
+TotalBsmtSF,Total square feet of basement area,n,,
+TotRmsAbvGrd,Total rooms above grade (does not include bathrooms),n,,
+Utilities,Type of utilities available,n,,
+WoodDeckSF,Wood deck area in square feet,y,6000,https://www.google.com/search?q=average+cost+to+install+wood+deck&oq=acverage+cost+to+install+wooden+de&aqs=chrome.1.69i57j0l7.6968j0j4&sourceid=chrome&ie=UTF-8
+YearBuilt,Original construction date,n,,
+YearRemodAdd,Remodel date (same as construction date if no remodeling or additions),n,,
+YrSold,Year Sold (YYYY),n,,

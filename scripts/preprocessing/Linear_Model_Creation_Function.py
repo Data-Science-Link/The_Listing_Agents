@@ -29,12 +29,12 @@ def OLS_Model_Creation(path):
     df = df.drop(['Unnamed: 0'], axis = 1) 
     
     # create df copy and isolate the categorical columns for dummification
-    categorical = ['Alley', 'BldgType_group', 'BsmtCond_group', 'BsmtExposure', 'BsmtFinType1', 'BsmtFinType2', 'BsmtQual_group', 'CentralAir', 'Condition1_group', 'Electrical_group', 'ExterCond_group', 'ExterQual', 'Exterior1st_group', 'Exterior2nd_group', 'Fence', 'FireplaceQu', 'Foundation_group', 'GarageCond_group', 'GarageFinish', 'GarageQual', 'GarageType', 'HeatingQC_group', 'HouseStyle_group', 'KitchenQual', 'LandContour_group', 'LandSlope', 'LotConfig_group', 'LotShape_group', 'MS_Zoning_group', 'MasVnrType_group', 'Neighborhood', 'PavedDrive', 'PoolQC', 'RoofStyle_group', 'SaleCondition_group', 'SaleType_group']
+    categorical = ['Alley', 'BldgType_group', 'BsmtCond_group', 'BsmtExposure', 'BsmtFinType1', 'BsmtFinType2', 'BsmtQual_group', 'CentralAir', 'Condition1_group', 'Electrical_group', 'ExterCond_group', 'ExterQual', 'Exterior1st_group', 'Exterior2nd_group', 'Fence', 'FireplaceQu', 'Foundation_group', 'GarageCond_group', 'GarageFinish', 'GarageQual', 'GarageType', 'HeatingQC_group', 'HouseStyle_group', 'KitchenQual', 'LandContour_group', 'LandSlope', 'LotConfig_group', 'LotShape_group', 'MS_Zoning_group', 'MasVnrType_group', 'Neighborhood', 'PavedDrive', 'RoofStyle_group', 'SaleCondition_group', 'SaleType_group']
     df_1 = df[categorical]
-    df_dum = pd.get_dummies(df_1, drop_first = True)  
+    df_dum = pd.get_dummies(df_1, drop_first = True, sparse=False)  
     
     # create df copy of numerical variables and concatenate this with the dummified df
-    df_num = df[['MSSubClass', 'LotFrontage', 'LotArea', 'OverallQual', 'OverallCond', 'YearBuilt', 'YearRemodAdd', 'MasVnrArea', 'BsmtFinSF1', 'BsmtFinSF2', 'BsmtUnfSF', 'TotalBsmtSF', '1stFlrSF', '2ndFlrSF', 'LowQualFinSF', 'GrLivArea', 'BsmtFullBath', 'BsmtHalfBath', 'FullBath', 'HalfBath', 'BedroomAbvGr', 'KitchenAbvGr', 'TotRmsAbvGrd', 'Fireplaces', 'GarageYrBlt', 'GarageCars', 'GarageArea', 'WoodDeckSF', 'OpenPorchSF', 'EnclosedPorch', '3SsnPorch', 'ScreenPorch', 'PoolArea', 'MiscVal', 'MoSold', 'YrSold', 'SalePrice']] 
+    df_num = df[['MSSubClass', 'LotFrontage', 'LotArea', 'OverallQual', 'OverallCond', 'YearBuilt', 'YearRemodAdd', 'MasVnrArea', 'BsmtFinSF1', 'BsmtFinSF2', 'BsmtUnfSF', 'TotalBsmtSF', '1stFlrSF', '2ndFlrSF', 'LowQualFinSF', 'GrLivArea', 'BsmtFullBath', 'BsmtHalfBath', 'FullBath', 'HalfBath', 'BedroomAbvGr', 'KitchenAbvGr', 'TotRmsAbvGrd', 'Fireplaces', 'GarageYrBlt', 'GarageCars', 'GarageArea', 'WoodDeckSF', 'OpenPorchSF', 'EnclosedPorch', '3SsnPorch', 'ScreenPorch', 'MiscVal', 'MoSold', 'YrSold', 'SalePrice']] 
     df = pd.concat([df_num, df_dum], axis = 1) 
     
     # Filter out outliers
@@ -47,10 +47,11 @@ def OLS_Model_Creation(path):
     
     # create X and y      
     X = df.drop(['SalePrice'], axis = 1)
-    y = np.log(df['SalePrice'])
+    y_linear = np.log(df['SalePrice'])
+    y_log = np.log(df['SalePrice'])
     
     # train_test_split   
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2)  
+    X_train, X_test, y_train, y_test = train_test_split(X, y_log, test_size = 0.2)  
     
     # linear regression   
     lin_reg = LinearRegression()
